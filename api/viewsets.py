@@ -21,3 +21,14 @@ class EmployeesViewSet(viewsets.ModelViewSet):
     queryset = Employees.objects.all()
     serializer_class = EmployeesSerializer
     http_method_names = ['get']
+
+
+
+def count_call_endpoint():
+    request_count = 0
+    return request_count
+
+
+def request_time():
+    request_time = 0
+    return request_time

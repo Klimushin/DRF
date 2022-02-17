@@ -51,3 +51,7 @@ We need an api for tracking empoyees in multiple organizations. Each `organizati
     - using this token user can make requests to the api (access token authorization)
 - add permissions
 
+- Тебе нужно всем суперюзерам, которые зарегистрирован 
+в системе с периодичностью 1 час, отправлять имейл с 
+информацией сколько запросов было сделано на эндпоинт 
+employees, а так же среднее время выполнения запроса.
