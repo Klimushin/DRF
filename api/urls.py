@@ -11,4 +11,6 @@ router.register(r'employees', EmployeesViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    # path('employees/', EmployeesListView.as_view())
+
 ]
