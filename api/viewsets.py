@@ -23,14 +23,14 @@ class EmployeesViewSet(viewsets.ModelViewSet):
     http_method_names = ['get']
 
 
-count = 0
+initial_count = 0
 request_time = []
 
 
 def count_call_endpoint():
-    global count
-    count += 1
-    request_count = count
+    global initial_count
+    initial_count += 1
+    request_count = initial_count
     print(request_count)
     return request_count
 
