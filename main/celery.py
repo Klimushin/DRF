@@ -13,6 +13,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'send-email-every-60-minutes': {
         'task': 'user.tasks.send_email_superuser',
-        'schedule': crontab(minute='*/1'),
+        'schedule': crontab(minute='*/60'),
     },
 }
