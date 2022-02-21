@@ -12,3 +12,8 @@ class UserProfile(models.Model):
     class Meta:
         verbose_name = "user profile"
         verbose_name_plural = "user profiles"
+
+
+class DataForEmail(models.Model):
+    average_time = models.FloatField(null=True, blank=True)
+    request_count = models.IntegerField(null=True, blank=True)

@@ -23,21 +23,3 @@ class EmployeesViewSet(viewsets.ModelViewSet):
     http_method_names = ['get']
 
 
-initial_count = 0
-request_time = []
-
-
-def count_call_endpoint():
-    global initial_count
-    initial_count += 1
-    request_count = initial_count
-    print(request_count)
-    return request_count
-
-
-def average_request_time(total_time):
-    global request_time
-    request_time.append(total_time)
-    average_time = sum(request_time) / len(request_time)
-    print(average_time)
-    return average_time
